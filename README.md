@@ -38,7 +38,7 @@ Subtype     : JAVA_RCE_VIA_OBJECT_DESERIALIZATION
 
 ## Repository structure
 ```
-remcheck/
+challenge-4/
 ├── README.md
 ├── REPORT.md
 ├── prompts.md
