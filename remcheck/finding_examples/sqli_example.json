@@ -1,0 +1,21 @@
+{
+  "finding_id": "FIND-0042",
+  "type": "sql_injection",
+  "endpoint": "POST /post",
+  "parameter": "username",
+  "base_url": "https://httpbin.org",
+  "auth": {
+    "type": "bearer",
+    "token": "demo-token-not-real"
+  },
+  "baseline": {
+    "status_code": 200,
+    "response_hash": "a3f1bc9d",
+    "response_time_p95": 2.0
+  },
+  "metadata": {
+    "db_engine": "mysql",
+    "original_payload": "' OR '1'='1",
+    "note": "httpbin.org echoes all POST bodies with 200 — in a real test this would be the vulnerable login endpoint"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "report_id": "632bf47a-f6a4-495e-92b2-df64550f28ff",
+  "finding_id": "FIND-0139",
+  "generated_at": "2026-03-19T15:51:44.759390+00:00",
+  "engine_version": "0.1.0",
+  "verdict": "REMEDIATION_VERIFIED",
+  "test_results": [
+    {
+      "test_id": "TC-01",
+      "description": "CommonsCollections6 gadget chain",
+      "encoding": "hex",
+      "status_code": 400,
+      "response_time": 0.006,
+      "body_snippet": "{\"reason\":\"class_not_in_allowlist\",\"status\":\"rejected\",\"timestamp\":\"2026-03-19T15:51:12.690075+00:00\"}\n",
+      "oob_hit": false,
+      "anomalies": [],
+      "result": "PASS",
+      "consistency": {
+        "runs": 3,
+        "failures": 0,
+        "score": "0/3",
+        "flag": "CONSISTENT_PASS",
+        "all_response_times": [
+          0.006,
+          0.009,
+          0.007
+        ],
+        "all_status_codes": [
+          400,
+          400,
+          400
+        ]
+      }
+    },
+    {
+      "test_id": "TC-02",
+      "description": "Benign serialized object (control)",
+      "encoding": "base64",
+      "status_code": 200,
+      "response_time": 0.005,
+      "body_snippet": "{\"message\":\"valid object processed\",\"status\":\"accepted\",\"timestamp\":\"2026-03-19T15:51:20.714275+00:00\"}\n",
+      "oob_hit": false,
+      "anomalies": [],
+      "result": "PASS",
+      "consistency": {
+        "runs": 3,
+        "failures": 0,
+        "score": "0/3",
+        "flag": "CONSISTENT_PASS",
+        "all_response_times": [
+          0.005,
+          0.005,
+          0.006
+        ],
+        "all_status_codes": [
+          200,
+          200,
+          200
+        ]
+      }
+    },
+    {
+      "test_id": "TC-03",
+      "description": "Invalid magic bytes",
+      "encoding": "hex",
+      "status_code": 400,
+      "response_time": 0.004,
+      "body_snippet": "{\"reason\":\"invalid_magic_bytes\",\"status\":\"rejected\",\"timestamp\":\"2026-03-19T15:51:28.731825+00:00\"}\n",
+      "oob_hit": false,
+      "anomalies": [],
+      "result": "PASS",
+      "consistency": {
+        "runs": 3,
+        "failures": 0,
+        "score": "0/3",
+        "flag": "CONSISTENT_PASS",
+        "all_response_times": [
+          0.004,
+          0.004,
+          0.004
+        ],
+        "all_status_codes": [
+          400,
+          400,
+          400
+        ]
+      }
+    },
+    {
+      "test_id": "TC-04",
+      "description": "Spring gadget chain",
+      "encoding": "hex",
+      "status_code": 400,
+      "response_time": 0.005,
+      "body_snippet": "{\"reason\":\"class_not_in_allowlist\",\"status\":\"rejected\",\"timestamp\":\"2026-03-19T15:51:36.746114+00:00\"}\n",
+      "oob_hit": false,
+      "anomalies": [],
+      "result": "PASS",
+      "consistency": {
+        "runs": 3,
+        "failures": 0,
+        "score": "0/3",
+        "flag": "CONSISTENT_PASS",
+        "all_response_times": [
+          0.005,
+          0.004,
+          0.005
+        ],
+        "all_status_codes": [
+          400,
+          400,
+          400
+        ]
+      }
+    }
+  ],
+  "ai_analysis": {
+    "status": "skipped",
+    "reason": "GROQ_API_KEY not set",
+    "analysis": null
+  },
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "inconclusive": 0
+  },
+  "report_hash": "sha256:f4b96cb3b83ed359992bf03b5273e506a8326c83f1787925f249b0136b4521b9"
+}

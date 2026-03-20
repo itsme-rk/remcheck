@@ -1,0 +1,23 @@
+{
+  "finding_id": "FIND-0087",
+  "type": "ssrf_cloud_metadata",
+  "endpoint": "POST /post",
+  "parameter": "url",
+  "base_url": "https://httpbin.org",
+  "auth": {
+    "type": "bearer",
+    "token": "demo-token-not-real"
+  },
+  "baseline": {
+    "status_code": 400,
+    "response_time_p95": 1.5,
+    "note": "fixed server should reject SSRF URLs with 400"
+  },
+  "oob_poll_url": "https://oob.yourplatform.com/api/hits?token=find0087",
+  "metadata": {
+    "cloud": "AWS",
+    "imds_version": "v1",
+    "original_payload": "http://169.254.169.254/latest/meta-data/iam/security-credentials/",
+    "note": "httpbin.org is used as the target — it accepts all POST bodies so all SSRF tests will show behavioral anomaly (200 instead of 400), demonstrating the tool correctly detecting a vulnerable endpoint"
+  }
+}
