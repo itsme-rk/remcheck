@@ -42,7 +42,7 @@ remcheck/
 ├── README.md
 ├── REPORT.md
 ├── prompts.md
-├── architecture.pdf
+├── architecture.md ----> (Default Challenge documentation)
 ├── finding_examples/
 │   └── deserial_example.json
 ├── src/
@@ -342,7 +342,7 @@ tc = {
 
 ---
 
-### Additional AI integration — Result Analyzer (Option 2)
+### Additional AI integration — Result Analyzer (Option 2 from teh default challenge)
 
 After the deterministic engine finishes, completed results are sent to
 **Llama 3.1 8B via Groq API** for advisory analysis. The response is stored
