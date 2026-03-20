@@ -174,7 +174,7 @@ finding-specific signals without breaking the shared interface.
 
 ---
 
-## Q4 — Handling inconsistent results across three runs (Bonus B)
+## Q4 — Handling inconsistent results across three runs 
 
 This is directly implemented in `run_with_retry()`. Every test runs exactly 3
 times. After all 3 runs the consistency engine evaluates:
